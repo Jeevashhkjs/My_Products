@@ -10,6 +10,10 @@
     --teriary-color:#969FBC;
     --fourth-color:#F4F5F7;
 }
+.show{
+    color: white;
+    background-color: black;
+}
 body{
     background-color: var(--fourth-color);
 }
@@ -21,29 +25,48 @@ body{
     display: flex;
     flex-direction: column;
     height: 720px;
+    position: fixed;
     width: 64px;
     padding: 12px 20px;
+}
+.mainBody{
+    margin-left: 64px;
 }
 img{
     height: 24px;
     width: 24px;
 }
-.headerIcons, .footerIcons{
+.headerIcons, .footerIcons {
     display: flex;
     flex-direction: column;
-    margin-top: 37px;
+    margin-top: 30px;
+    gap: 10px;
 }
 .imgs{
-    background-color: blue;
     height: 20px;
     width: 20px;
     border-radius: 50%;
+    padding-left: 5px;
 }
 .title{
     display: flex;
 }
-.profile{
+.pjs {
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.profile {
     display: flex;
+    gap: 10px;
+}
+.footerIcons {
+    margin-top: 330px;
+}
+img.logo {
+    width: 46px;
+    position: relative;
+    right: 11px;
 }
 .header {
     display: flex;
@@ -79,6 +102,7 @@ span.name {
 .inputsearch{
     width: 1080px;
     border: 0;
+    outline: none;
 }
 .buttons {
     display: flex;
@@ -86,7 +110,7 @@ span.name {
     margin-top: 20px;
 }
 .projectButtons button {
-    padding: 5px 26px;
+    padding: 8px 26px;
     border-radius: 22px;
     border: 0;
     background-color: white;
@@ -98,7 +122,6 @@ span.name {
     gap: 5px;
 }
 .toggleButtons button {
-    border-radius: 4px;
     height: 40px;
     width: 140px;
     color: var(--primary-color);
@@ -109,8 +132,9 @@ span.name {
 }
 .initialpara {
     margin-top: 11px;
-    background-color: var(--fourth-color);
+    background-color: #c7c9ce;
     padding: 10px 10px;
+    border-radius: 5px;
 }
 .names{
     display: flex;
@@ -154,6 +178,7 @@ p.email {
     padding: 28px 70px;
     background-color: white;
     width: 287px;
+    border-radius: 7px;
 }
 .addnew {
     height: 132px;
@@ -167,6 +192,7 @@ p.email {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
+    border-radius: 6px;
 }
 .projectButtons {
     margin-top: 6px;
@@ -183,7 +209,4 @@ button.togbutton {
 .Pa , .email{
     color: var(--teriary-color);
 
-}
-.active{
-    background-color: blue;
 }
